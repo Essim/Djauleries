@@ -1,10 +1,10 @@
 import React from 'react'
-import DofusTraining from '../components/dofusTraining'
+import Home from '../components/Djauleries/Home'
 
 class Index extends React.Component {
   componentWillUnmount() {}
   render() {
-    return <DofusTraining />
+    return <Home />
   }
 }
 

@@ -8,8 +8,8 @@
                         "RUN npm install",
                         "COPY ./ /usr/src/app",
                         "ENV NODE_ENV production",
-                        "ENV PORT 8089",
-                        "EXPOSE 8089",
+                        "ENV PORT 8080",
+                        "EXPOSE 8080",
                         "CMD [ \"npm\", \"run-script\", \"build\" ]",
                         "CMD [ \"npm\", \"start\" ]"
                     ]

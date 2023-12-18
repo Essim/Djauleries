@@ -1,7 +1,7 @@
 const express = require('express')
 const next = require('next')
 const bodyParser = require('body-parser')
-const PORT = process.env.PORT || 8089
+const PORT = process.env.PORT || 8080
 const dev = process.env.NODE_DEV !== 'production' //true false
 const nextApp = next({ dev })
 const handle = nextApp.getRequestHandler() //part of next config
@@ -25,7 +25,7 @@ nextApp.prepare().then(() => {
     if (err) throw err
     console.log('Environment is dev ? ' + dev)
     console.log(
-      'ready at https://dofus-training.caprover-root.fol-stories.com',
+      'ready at https://djauleries.caprover-root.fol-stories.com',
     )
   })
 })

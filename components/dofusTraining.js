@@ -11,7 +11,7 @@ class DofusTraining extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      host: "https://dofus-training.caprover-root.fol-stories.com",
+      host: "https://djauleries.caprover-root.fol-stories.com",
       spellListenerAdded: false,
       spellBarListenerAdded: false,
       spellBarFirstActive: true,

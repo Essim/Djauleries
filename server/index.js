@@ -7,10 +7,10 @@ const nextApp = next({ dev })
 const handle = nextApp.getRequestHandler() //part of next config
 const mongoose = require('mongoose')
 
-const db = mongoose.connect(
-  `mongodb://DofusTraining:DofusTraining@cluster0-shard-00-00.n58hl.mongodb.net:27017,cluster0-shard-00-01.n58hl.mongodb.net:27017,cluster0-shard-00-02.n58hl.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-gzfxxm-shard-0&authSource=admin&retryWrites=true&w=majority`,
-  { useNewUrlParser: true, useFindAndModify: false, useUnifiedTopology: true },
-)
+// const db = mongoose.connect(
+// //  `mongodb://DofusTraining:DofusTraining@cluster0-shard-00-00.n58hl.mongodb.net:27017,cluster0-shard-00-01.n58hl.mongodb.net:27017,cluster0-shard-00-02.n58hl.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-gzfxxm-shard-0&authSource=admin&retryWrites=true&w=majority`,
+//   { useNewUrlParser: true, useFindAndModify: false, useUnifiedTopology: true },
+// )
 
 nextApp.prepare().then(() => {
   // express code here

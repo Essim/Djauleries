@@ -16,6 +16,7 @@ class home extends Component {
               height: 100%;
               top: 0;
               left: 0;
+              background-image: url(https://imgur.com/hgc2ubE);
             }
             div {
               display: flex;

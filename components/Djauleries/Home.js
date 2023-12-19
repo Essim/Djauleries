@@ -6,7 +6,7 @@ class home extends Component {
     this.state = {
       host: "https://djauleries.caprover-root.fol-stories.com",
       currentPage: "rules",
-      currentEdition: "Janvier24",
+      currentEdition: "Janvier2024",
     };
   }
 
@@ -175,7 +175,7 @@ class home extends Component {
             <div className="secondaryTitle menuItem">
               <div
                 className="menuText"
-                onClick={() => switchEdition("Janvier2024")}
+                onClick={() => switchEdition("Janvier24")}
               >
                 Janvier 2024
               </div>
@@ -210,7 +210,7 @@ class home extends Component {
             </div>
           </div>
         </div>
-        {currentPage == "rules" && currentEdition == "Janvier24" && (
+        {currentPage == "rules" && currentEdition == "Janvier2024" && (
           <RulesEditionJanvier2024
             updateState={this.updateState}
             state={this.state}

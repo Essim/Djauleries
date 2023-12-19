@@ -19,6 +19,13 @@ class home extends Component {
               background-size: 40rem;
               background-image: url(https://imgur.com/hgc2ubE.png);
             }
+            .logo {
+              background-image: url(https://imgur.com/lQpP8Ww.png);
+              position: absolute;
+              left: 0;
+              width: 2rem;
+              height: 2rem;
+            }
             div {
               display: flex;
             }
@@ -68,6 +75,7 @@ class home extends Component {
             }
           `}
         </style>
+        <div className="logo"></div>
         <div className="menuArea">
           <div className="titleArea">
             <div className="mainTitle menuItem">

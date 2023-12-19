@@ -6,9 +6,12 @@ class home extends Component {
     // } = this.props.state
 
     return (
-      <div>
+      <div className="pageBG">
         <style jsx>
           {`
+            .pageBG {
+              background-color: #0e273d;
+            }
             div {
               display: flex;
             }
@@ -17,7 +20,8 @@ class home extends Component {
             .menuItem {
               padding: 2rem;
               font-size: 1rem;
-              width: auto;
+              margin-left: auto;
+              margin-right: auto;
               height: 2rem;
             }
             .menuArea {
@@ -44,9 +48,9 @@ class home extends Component {
             <div className="secondaryTitle menuItem">Edition 2024</div>
           </div>
           <div className="subMenusArea">
-          <div className="tertiaryTitle menuItem">Règles</div>
-          <div className="tertiaryTitle menuItem">Inscriptions</div>
-          <div className="tertiaryTitle menuItem">Matchs</div>
+            <div className="tertiaryTitle menuItem">Règles</div>
+            <div className="tertiaryTitle menuItem">Inscriptions</div>
+            <div className="tertiaryTitle menuItem">Matchs</div>
           </div>
         </div>
         <div className="aboutContent"></div>

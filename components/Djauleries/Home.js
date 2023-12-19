@@ -97,19 +97,22 @@ class home extends Component {
               border: solid 2px #000000a3;
               border-top: none;
               width: 100%;
-              background-color: #00000080;
+              background-color: #00000080;   
+              box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 10px 5px;
             }
             .menuItem:hover {
               color: white;
               font-weight: 700;
               border: solid 2px #4c4d5780;
               background-color: #4c4d5750;
+              box-shadow: rgba(255, 255, 255, 0.8) 0px 0px 10px 5px;
             }
             .menuItem:selected {
               color: white;
               font-weight: 700;
               border: solid 2px #4c4d57a3;
               background-color: #4c4d5780;
+              box-shadow: rgba(255, 255, 255, 0.8) 0px 0px 10px 5px;
             }
             .menuText {
               margin-left: auto;
@@ -142,18 +145,17 @@ class home extends Component {
               margin-right: 20%;
               background-color: black;
               display: inline-block;
-              box-shadow: rgba(0,0,0,0.8) 0px 0px 10px 10px;
+              box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 10px 10px;
             }
             .subTitleLine {
-              text-decoration: underline;
-              margin-left: 25%;
+              margin-left: 20%;
               margin-right: 20%;
               display: inline-block;
               margin-top: 2rem;
-              font-size: 1.2rem;
+              font-size: 1.5rem;
               font-weight: bolder;
               background-color: black;
-              box-shadow: rgba(0,0,0,0.8) 0px 0px 10px 10px;
+              box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 10px 10px;
             }
           `}
         </style>

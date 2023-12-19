@@ -150,7 +150,7 @@ class home extends Component {
     this.setState(newState);
   };
 
-  switchMenu = (menuNum) => {
+  switchMenu = (menu) => {
     this.updateState({
       currentPage: menu,
     });

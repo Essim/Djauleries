@@ -5,6 +5,7 @@ class home extends Component {
     this.state = {
       host: "https://djauleries.caprover-root.fol-stories.com",
       currentPage: "rules",
+      currentEdition: "Janvier24",
     };
   }
 
@@ -13,7 +14,7 @@ class home extends Component {
     const { currentPage } = this.state;
 
     return (
-      <div className="pageBG">
+      <div className="fullPageContent">
         <style jsx>
           {`
             body {
@@ -30,19 +31,25 @@ class home extends Component {
               display: flex;
               color: white;
             }
-            .testPageBG {
+            .PageBGFilter {
+              background-color: #00000030;
               position: fixed;
               width: 100%;
               height: 100%;
               top: 0;
               left: 0;
-              background-size: 40rem;
-              font-family: fantasy;
-              flex-direction: column;
-              background-image: url(https://imgur.com/hgc2ubE.png);
+              z-index: -1;
             }
             .pageBG {
-              background-color: #0e273d;
+              position: fixed;
+              width: 100%;
+              height: 100%;
+              top: 0;
+              left: 0;
+              background-image: url(https://imgur.com/hgc2ubE.png);
+              z-index: -2;
+            }
+            .fullPageContent {
               position: absolute;
               width: 100%;
               height: 100%;
@@ -51,7 +58,6 @@ class home extends Component {
               background-size: 40rem;
               font-family: fantasy;
               flex-direction: column;
-              background-image: url(https://imgur.com/hgc2ubE.png);
             }
             .logo {
               background-image: url(https://imgur.com/lQpP8Ww.png);
@@ -148,7 +154,8 @@ class home extends Component {
           `}
         </style>
         <div className="logo"></div>
-        <div className="testPageBG"></div>
+        <div className="pageBG"></div>
+        <div className="pageBGFilter"></div>
         <div className="menuArea">
           <div className="titleArea">
             <div className="mainTitle">

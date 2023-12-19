@@ -30,6 +30,7 @@ class home extends Component {
               display: flex;
             }
             .titleArea {
+              font-size: 3rem !important;
             }
             .menuItem {
               padding: 1rem;

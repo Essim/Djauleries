@@ -175,7 +175,7 @@ class home extends Component {
             <div className="secondaryTitle menuItem">
               <div
                 className="menuText"
-                onClick={() => switchEdition("Janvier24")}
+                onClick={() => switchEdition("Janvier2024")}
               >
                 Janvier 2024
               </div>

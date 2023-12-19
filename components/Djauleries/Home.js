@@ -99,6 +99,7 @@ class home extends Component {
               padding: 1rem;
               font-size: 2rem;
               height: 2rem;
+              min-width: 13rem;
               color: #d0d0d0;
               font-weight: 600;
               border: solid 2px #000000a3;

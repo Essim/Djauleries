@@ -60,7 +60,7 @@ class HomeDescription extends Component {
             }
           `}
         </style>
-        <div className="subTitle">Règles : Janvier 2024</div>
+        <div className="subTitle">Accueil</div>
         <div className="textBlock">
           Bienvenue dans cette première
           <a

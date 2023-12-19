@@ -16,7 +16,8 @@ class home extends Component {
               height: 100%;
               top: 0;
               left: 0;
-              background-image: url(https://imgur.com/hgc2ubE);
+              background-size: 40rem;
+              background-image: url(https://imgur.com/hgc2ubE.png);
             }
             div {
               display: flex;
@@ -27,10 +28,24 @@ class home extends Component {
               padding: 1rem;
               font-size: 2rem;
               height: 2rem;
+              color: #d0d0d0;
+              font-weight: 600;
+              border: solid 2px #000000a3;
+              border-top: none;
+              width: 100%;
+              background-color: #00000080;
+            }
+            .menuItem:hover {
               color: white;
               font-weight: 700;
-              border: solid 2px #03121e;
-              width: 100%;
+              border: solid 2px #4c4d5780;
+              background-color: #4c4d5750;
+            }
+            .menuItem:selected {
+              color: white;
+              font-weight: 700;
+              border: solid 2px #4c4d57a3;
+              background-color: #4c4d5780;
             }
             .menuText {
               margin-left: auto;

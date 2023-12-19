@@ -115,7 +115,7 @@ class home extends Component {
               cursor: pointer;
               box-shadow: rgba(255, 255, 255, 0.8) 0px 0px 10px 5px;
             }
-            .menuItem:selected {
+            .menuItemSelected {
               color: white;
               font-weight: 700;
               border: solid 2px #4c4d57a3;
@@ -148,29 +148,50 @@ class home extends Component {
           </div>
           <div className="editionsArea">
             <div
-              className="secondaryTitle menuItem"
+              className={
+                "secondaryTitle menuItem " +
+                (currentPage == "Janvier2024" ? "menuItemSelected" : "")
+              }
               onClick={() => switchEdition("Janvier2024")}
             >
               <div className="menuText">Janvier 2024</div>
             </div>
             <div
-              className="secondaryTitle menuItem"
+              className={
+                "secondaryTitle menuItem " +
+                (currentPage == "Fevrier2024" ? "menuItemSelected" : "")
+              }
               onClick={() => switchEdition("Fevrier2024")}
             >
               <div className="menuText">Février 2024</div>
             </div>
           </div>
           <div className="subMenusArea">
-            <div className="menuItem" onClick={() => switchMenu("rules")}>
+            <div
+              className={
+                "menuItem " +
+                (currentPage == "rules" ? "menuItemSelected" : "")
+              }
+              onClick={() => switchMenu("rules")}
+            >
               <div className="menuText">Règles</div>
             </div>
             <div
-              className="menuItem"
+              className={
+                "menuItem " +
+                (currentPage == "subscription" ? "menuItemSelected" : "")
+              }
               onClick={() => switchMenu("subscription")}
             >
               <div className="menuText">Inscriptions</div>
             </div>
-            <div className="menuItem" onClick={() => switchMenu("matchs")}>
+            <div
+              className={
+                "menuItem " +
+                (currentPage == "matchs" ? "menuItemSelected" : "")
+              }
+              onClick={() => switchMenu("matchs")}
+            >
               <div className="menuText">Matchs</div>
             </div>
           </div>

@@ -63,6 +63,12 @@ class InscriptionsEditionJanvier2024 extends Component {
         <div className="subTitle">Inscription : Janvier 2024</div>
         <div className="textBlock">
           Ouverture des inscriptions : -31 JOURS !
+        </div>  <div className="textBlock">
+          TODO - Affichage date début
+        </div> <div className="textBlock">
+          TODO - Affichage nb équipes
+        </div> <div className="textBlock">
+          TODO - Affichage date début
         </div>
       </div>
     );

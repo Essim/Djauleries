@@ -62,28 +62,28 @@ class home extends Component {
               height: 100%;
               top: 0;
               left: 0;
-              background-size: 40rem;
+              background-size: 60vw;
               font-family: fantasy;
               flex-direction: column;
             }
             .logo {
               background-image: url(https://imgur.com/lQpP8Ww.png);
               position: fixed;
-              left: 1rem;
-              width: 6rem;
-              height: 6rem;
-              top: 1rem;
+              left: 1.5vw;
+              width: 9vw;
+              height: 9vw;
+              top: 1.5vw;
               background-size: cover;
               background-repeat: no-repeat;
             }
             .titleArea {
-              font-size: 3rem !important;
+              font-size: 4.5vw !important;
             }
             .mainTitle {
-              padding-top: 2rem;
-              padding-bottom: 3rem;
-              font-size: 3rem;
-              height: 2rem;
+              padding-top: 3vw;
+              padding-bottom: 4.5vw;
+              font-size: .5vw;
+              height: 3vw;
               color: #d0d0d0;
               font-weight: 600;
               border: solid 2px #000000a3;
@@ -96,10 +96,10 @@ class home extends Component {
               margin-right: auto;
             }
             .menuItem {
-              padding: 1rem;
-              font-size: 2rem;
-              height: 2rem;
-              min-width: 13rem;
+              padding: 1.5vw;
+              font-size: 3vw;
+              height: 3vw;
+              min-width: 10vw;
               color: #d0d0d0;
               font-weight: 600;
               border: solid 2px #000000a3;
@@ -138,17 +138,17 @@ class home extends Component {
             }
             .secondaryTitle {
             }
-            .inactiveSecondaryTitle {   
-              padding: 1rem;
-              height: 2rem;
+            .inactiveSecondaryTitle {
+              padding: 1.5vw;
+              height: 3vw;
               color: #d0d0d0;
               font-weight: 600;
               border: solid 2px #000000a3;
               border-top: none;
               box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 10px 5px;
-              width: 5rem;
+              width: 8vw;
               background-color: #303030a0;
-              font-size: 1.5rem;
+              font-size: 2vw;
             }
             .subMenusArea {
               flex-direction: row;
@@ -277,8 +277,7 @@ class home extends Component {
           <div className="subMenusArea">
             <div
               className={
-                "menuItem " +
-                (currentPage == "rules" ? "menuItemSelected" : "")
+                "menuItem " + (currentPage == "rules" ? "menuItemSelected" : "")
               }
               onClick={() => switchMenu("rules")}
             >

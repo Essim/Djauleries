@@ -23,7 +23,7 @@ class MatchsEditionJanvier2024 extends Component {
               height: 100%;
               top: 0;
               left: 0;
-              background-size: 40rem;
+              background-size: 60vw;
               flex-direction: column;
               font-family: auto;
             }
@@ -31,8 +31,8 @@ class MatchsEditionJanvier2024 extends Component {
               text-decoration: underline;
               margin-left: auto;
               margin-right: auto;
-              margin-top: 3rem;
-              font-size: 2rem;
+              margin-top: 4.5vw;
+              font-size: 3vw;
             }
             .pageContent {
               flex-direction: column;
@@ -40,8 +40,8 @@ class MatchsEditionJanvier2024 extends Component {
               font-family: auto;
             }
             .textBlock {
-              margin-top: 1rem;
-              font-size: 1.1rem;
+              margin-top: 1.5vw;
+              font-size: 1.65vw;
               margin-left: 20%;
               margin-right: 20%;
               background-color: black;
@@ -52,8 +52,8 @@ class MatchsEditionJanvier2024 extends Component {
               margin-left: 20%;
               margin-right: 20%;
               display: inline-block;
-              margin-top: 2rem;
-              font-size: 1.5rem;
+              margin-top: 3vw;
+              font-size: 2.25vw;
               font-weight: bolder;
               background-color: black;
               box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 10px 10px;

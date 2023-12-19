@@ -1,9 +1,16 @@
 import React, { Component } from "react";
 class home extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      host: "https://djauleries.caprover-root.fol-stories.com",
+      currentPage: "rules",
+    };
+  }
+
   render() {
-    let toggleTag = this.toggleTag;
-    // const {
-    // } = this.props.state
+    let switchMenu = this.switchMenu;
+    const { currentPage } = this.state;
 
     return (
       <div className="pageBG">
@@ -90,7 +97,7 @@ class home extends Component {
             }
             .tertiaryTitle {
             }
-            .aboutContent {
+            .rulesContent {
             }
           `}
         </style>
@@ -108,24 +115,45 @@ class home extends Component {
           </div>
           <div className="subMenusArea">
             <div className="tertiaryTitle menuItem">
-              <div className="menuText">Règles</div>
+              <div className="menuText" onClick={() => switchMenu("rules")}>
+                Règles
+              </div>
             </div>
             <div className="tertiaryTitle menuItem">
-              <div className="menuText">Inscriptions</div>
+              <div
+                className="menuText"
+                onClick={() => switchMenu("subscription")}
+              >
+                Inscriptions
+              </div>
             </div>
             <div className="tertiaryTitle menuItem">
-              <div className="menuText">Matchs</div>
+              <div className="menuText" onClick={() => switchMenu("matchs")}>
+                Matchs
+              </div>
             </div>
           </div>
         </div>
-        <div className="aboutContent"></div>
+        {currentPage == "rules" && <div className="rulesContent">
+          rules</div>}
+        {currentPage == "subscription" && (
+          <div className="subscriptionContent">
+            subscription
+          </div>
+        )}
+        {currentPage == "matchs" && <div className="matchsContent">
+          matchs</div>}
       </div>
     );
   }
+  updateState = (newState) => {
+    this.setState(newState);
+  };
 
-  toggleTag = () => {
-    let st = this.props.state;
-    this.props.updateState(st);
+  switchMenu = (menuNum) => {
+    this.updateState({
+      currentPage: menu,
+    });
   };
 }
 

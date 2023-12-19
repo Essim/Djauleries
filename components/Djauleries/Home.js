@@ -35,6 +35,22 @@ class home extends Component {
             .titleArea {
               font-size: 3rem !important;
             }
+            .mainTitle {
+              padding-top: 2rem;
+              padding-bottom: 3rem;
+              font-size: 2rem;
+              height: 2rem;
+              color: #d0d0d0;
+              font-weight: 600;
+              border: solid 2px #000000a3;
+              border-top: none;
+              width: 100%;
+              background-color: #00000080;
+            }
+            .titleText {
+              margin-left: auto;
+              margin-right: auto;
+            }
             .menuItem {
               padding: 1rem;
               font-size: 2rem;
@@ -66,8 +82,6 @@ class home extends Component {
               flex-direction: column;
               width: 100%;
             }
-            .mainTitle {
-            }
             .secondaryTitle {
             }
             .subMenusArea {
@@ -82,8 +96,8 @@ class home extends Component {
         <div className="logo"></div>
         <div className="menuArea">
           <div className="titleArea">
-            <div className="mainTitle menuItem">
-              <div className="menuText">Djauleries</div>
+            <div className="mainTitle">
+              <div className="titleText">Djauleries</div>
             </div>
           </div>
           <div className="editionsArea">

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class RulesEditionJanvier2024 extends Component {
+class RulesEditionFevrier2024 extends Component {
   render() {
     return (
       <div className="pageContent">
@@ -60,7 +60,7 @@ class RulesEditionJanvier2024 extends Component {
             }
           `}
         </style>
-        <div className="subTitle">Règles : Janvier 2024</div>
+        <div className="subTitle">Règles : Février 2024</div>
         <div className="textBlock">
           Bienvenue dans cette première
           <a
@@ -144,4 +144,4 @@ class RulesEditionJanvier2024 extends Component {
   }
 }
 
-export default RulesEditionJanvier2024;
+export default RulesEditionFevrier2024;

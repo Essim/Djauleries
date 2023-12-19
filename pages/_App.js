@@ -1,7 +1,8 @@
 import App, { Container } from 'next/app'
 
-import Head from 'next/head';
+import Head from 'next/head'
 import React from 'react'
+import './styles.css'
 
 class MyApp extends App {
     render() {

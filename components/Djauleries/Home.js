@@ -19,6 +19,8 @@ class home extends Component {
             a {
               display: inline-block;
               text-decoration: none;
+              font-family: monospace;
+              font-weight: bolder;
             }
             div {
               display: flex;
@@ -103,12 +105,12 @@ class home extends Component {
             }
             .subTitle {
               text-decoration: underline;
-            }
-            .rulesContent {
               margin-left: auto;
               margin-right: auto;
               margin-top: 3rem;
               font-size: 2rem;
+            }
+            .rulesContent {
               flex-direction: column;
             }
             .textBlock {
@@ -116,6 +118,7 @@ class home extends Component {
               font-size: 1rem;
               margin-left: 20%;
               margin-right: 20%;
+              display: inline-block;
             }
           `}
         </style>

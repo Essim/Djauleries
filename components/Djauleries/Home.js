@@ -21,6 +21,7 @@ class home extends Component {
               text-decoration: none;
               font-family: monospace;
               font-weight: bolder;
+              color: white;
             }
             div {
               display: flex;
@@ -169,8 +170,12 @@ class home extends Component {
               >
                 {"(?)"}
               </a>{" "}
-              édition des Djauleries ! Les Djauleries sont un tournoi mensuel se
-              déroulant sur le tournoi, en association avec le{" "}
+              édition des Djauleries !
+            </div>
+
+            <div className="textBlock">
+              Les Djauleries sont un tournoi mensuel se déroulant sur le
+              tournoi, en association avec le{" "}
               <a href="https://ktarena.com/" target="_blank">
                 KTA
               </a>

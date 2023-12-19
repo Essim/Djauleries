@@ -17,6 +17,7 @@ class home extends Component {
               top: 0;
               left: 0;
               background-size: 40rem;
+              font-family: fantasy;
               background-image: url(https://imgur.com/hgc2ubE.png);
             }
             .logo {
@@ -38,7 +39,7 @@ class home extends Component {
             .mainTitle {
               padding-top: 2rem;
               padding-bottom: 3rem;
-              font-size: 2rem;
+              font-size: 3rem;
               height: 2rem;
               color: #d0d0d0;
               font-weight: 600;

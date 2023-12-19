@@ -16,6 +16,9 @@ class home extends Component {
       <div className="pageBG">
         <style jsx>
           {`
+            body {
+              background-color: black;
+            }
             a {
               display: inline-block;
               text-decoration: none;
@@ -26,6 +29,17 @@ class home extends Component {
             div {
               display: flex;
               color: white;
+            }
+            .testPageBG {
+              position: fixed;
+              width: 100%;
+              height: 100%;
+              top: 0;
+              left: 0;
+              background-size: 40rem;
+              font-family: fantasy;
+              flex-direction: column;
+              background-image: url(https://imgur.com/hgc2ubE.png);
             }
             .pageBG {
               background-color: #0e273d;
@@ -124,12 +138,17 @@ class home extends Component {
               display: inline-block;
             }
             .subTitleLine {
-              text-decoration: outline;
-              padding-left: 1rem;
+              text-decoration: underline;
+              margin-left: 25%;
+              margin-right: 20%;
+              display: inline-block;
+              margin-top: 2rem;
+              font-size: 1.2rem;
             }
           `}
         </style>
         <div className="logo"></div>
+        <div className="testPageBG"></div>
         <div className="menuArea">
           <div className="titleArea">
             <div className="mainTitle">

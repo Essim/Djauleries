@@ -11,6 +11,11 @@ class home extends Component {
           {`
             .pageBG {
               background-color: #0e273d;
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              top: 0;
+              left: 0;
             }
             div {
               display: flex;
@@ -18,14 +23,21 @@ class home extends Component {
             .titleArea {
             }
             .menuItem {
-              padding: 2rem;
-              font-size: 1rem;
+              padding: 1rem;
+              font-size: 2rem;
+              height: 2rem;
+              color: white;
+              font-weight: 700;
+              border: solid 2px #03121e;
+              width: 100%;
+            }
+            .menuText {
               margin-left: auto;
               margin-right: auto;
-              height: 2rem;
             }
             .menuArea {
               flex-direction: column;
+              width: 100%;
             }
             .mainTitle {
             }
@@ -42,15 +54,25 @@ class home extends Component {
         </style>
         <div className="menuArea">
           <div className="titleArea">
-            <div className="mainTitle menuItem">Djauleries</div>
+            <div className="mainTitle menuItem">
+              <div className="menuText">Djauleries</div>
+            </div>
           </div>
           <div className="editionsArea">
-            <div className="secondaryTitle menuItem">Edition 2024</div>
+            <div className="secondaryTitle menuItem">
+              <div className="menuText">Edition 2024</div>
+            </div>
           </div>
           <div className="subMenusArea">
-            <div className="tertiaryTitle menuItem">Règles</div>
-            <div className="tertiaryTitle menuItem">Inscriptions</div>
-            <div className="tertiaryTitle menuItem">Matchs</div>
+            <div className="tertiaryTitle menuItem">
+              <div className="menuText">Règles</div>
+            </div>
+            <div className="tertiaryTitle menuItem">
+              <div className="menuText">Inscriptions</div>
+            </div>
+            <div className="tertiaryTitle menuItem">
+              <div className="menuText">Matchs</div>
+            </div>
           </div>
         </div>
         <div className="aboutContent"></div>

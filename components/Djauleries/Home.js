@@ -192,7 +192,7 @@ class home extends Component {
             >
               <div className="menuText inactiveMenuText">Mars</div>
             </div>
-            <div
+            {/* <div
               className={
                 "inactiveSecondaryTitle " +
                 (currentEdition == "Mars2024" ? "menuItemSelected" : "")
@@ -272,7 +272,7 @@ class home extends Component {
              // onClick={() => switchEdition("Fevrier2024")}
             >
               <div className="menuText inactiveMenuText">Dec</div>
-            </div>
+            </div> */}
           </div>
           <div className="subMenusArea">
             <div

@@ -111,7 +111,7 @@ class home extends Component {
               color: white;
               font-weight: 700;
               border: solid 2px #4c4d5780;
-              background-color: #4c4d5750;
+              background-color: #4c4d5780;
               cursor: pointer;
               box-shadow: rgba(255, 255, 255, 0.8) 0px 0px 10px 5px;
             }
@@ -119,7 +119,8 @@ class home extends Component {
               color: white;
               font-weight: 700;
               border: solid 2px #4c4d57a3;
-              background-color: #4c4d5780;
+              background-color: #4c4d5750;
+              z-index: 1;
               box-shadow: rgba(255, 255, 255, 0.7) 0px 0px 10px;
             }
             .menuText {

@@ -107,7 +107,7 @@ class home extends Component {
               font-weight: 700;
               border: solid 2px #4c4d5780;
               background-color: #4c4d5750;
-              pointer: cursor;
+              cursor: pointer;
               box-shadow: rgba(255, 255, 255, 0.8) 0px 0px 10px 5px;
             }
             .menuItem:selected {
@@ -172,41 +172,31 @@ class home extends Component {
             </div>
           </div>
           <div className="editionsArea">
-            <div className="secondaryTitle menuItem">
-              <div
-                className="menuText"
-                onClick={() => switchEdition("Janvier2024")}
-              >
-                Janvier 2024
-              </div>
+            <div
+              className="secondaryTitle menuItem"
+              onClick={() => switchEdition("Janvier2024")}
+            >
+              <div className="menuText">Janvier 2024</div>
             </div>
-            <div className="secondaryTitle menuItem">
-              <div
-                className="menuText"
-                onClick={() => switchEdition("Fevrier2024")}
-              >
-                Février 2024
-              </div>
+            <div
+              className="secondaryTitle menuItem"
+              onClick={() => switchEdition("Fevrier2024")}
+            >
+              <div className="menuText">Février 2024</div>
             </div>
           </div>
           <div className="subMenusArea">
-            <div className="menuItem">
-              <div className="menuText" onClick={() => switchMenu("rules")}>
-                Règles
-              </div>
+            <div className="menuItem" onClick={() => switchMenu("rules")}>
+              <div className="menuText">Règles</div>
             </div>
-            <div className="menuItem">
-              <div
-                className="menuText"
-                onClick={() => switchMenu("subscription")}
-              >
-                Inscriptions
-              </div>
+            <div
+              className="menuItem"
+              onClick={() => switchMenu("subscription")}
+            >
+              <div className="menuText">Inscriptions</div>
             </div>
-            <div className="menuItem">
-              <div className="menuText" onClick={() => switchMenu("matchs")}>
-                Matchs
-              </div>
+            <div className="menuItem" onClick={() => switchMenu("matchs")}>
+              <div className="menuText">Matchs</div>
             </div>
           </div>
         </div>

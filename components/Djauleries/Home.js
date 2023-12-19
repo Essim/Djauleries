@@ -113,6 +113,7 @@ class home extends Component {
               border: solid 2px #4c4d5780;
               background-color: #4c4d5780;
               cursor: pointer;
+              z-index: 2;
               box-shadow: rgba(255, 255, 255, 0.8) 0px 0px 10px 5px;
             }
             .menuItemSelected {

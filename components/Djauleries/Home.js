@@ -82,7 +82,7 @@ class home extends Component {
             .mainTitle {
               padding-top: 3vw;
               padding-bottom: 4.5vw;
-              font-size: .5vw;
+              font-size: 5vw;
               height: 3vw;
               color: #d0d0d0;
               font-weight: 600;

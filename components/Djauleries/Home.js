@@ -14,14 +14,21 @@ class home extends Component {
             }
             .titleArea {
             }
+            .menuItem {
+              padding: 2rem;
+              font-size: 1rem;
+              width: auto;
+              height: 2rem;
+            }
             .menuArea {
+              flex-direction: column;
             }
             .mainTitle {
             }
             .secondaryTitle {
             }
             .subMenusArea {
-              flex-direction: row;;
+              flex-direction: row;
             }
             .tertiaryTitle {
             }
@@ -31,15 +38,15 @@ class home extends Component {
         </style>
         <div className="menuArea">
           <div className="titleArea">
-            <div className="mainTitle">Djauleries</div>
+            <div className="mainTitle menuItem">Djauleries</div>
           </div>
           <div className="editionsArea">
-            <div className="secondaryTitle">Edition 2024</div>
+            <div className="secondaryTitle menuItem">Edition 2024</div>
           </div>
           <div className="subMenusArea">
-          <div className="tertiaryTitle">Règles</div>
-          <div className="tertiaryTitle">Inscriptions</div>
-          <div className="tertiaryTitle">Matchs</div>
+          <div className="tertiaryTitle menuItem">Règles</div>
+          <div className="tertiaryTitle menuItem">Inscriptions</div>
+          <div className="tertiaryTitle menuItem">Matchs</div>
           </div>
         </div>
         <div className="aboutContent"></div>

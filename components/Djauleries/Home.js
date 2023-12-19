@@ -137,10 +137,12 @@ class home extends Component {
             }
             .textBlock {
               margin-top: 1rem;
-              font-size: 1rem;
+              font-size: 1.1rem;
               margin-left: 20%;
               margin-right: 20%;
+              background-color: black;
               display: inline-block;
+              box-shadow: rgba(0,0,0,0.8) 0px 0px 10px 10px;
             }
             .subTitleLine {
               text-decoration: underline;
@@ -149,6 +151,9 @@ class home extends Component {
               display: inline-block;
               margin-top: 2rem;
               font-size: 1.2rem;
+              font-weight: bolder;
+              background-color: black;
+              box-shadow: rgba(0,0,0,0.8) 0px 0px 10px 10px;
             }
           `}
         </style>

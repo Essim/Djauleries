@@ -61,7 +61,7 @@ class home extends Component {
             }
             .logo {
               background-image: url(https://imgur.com/lQpP8Ww.png);
-              position: absolute;
+              position: fixed;
               left: 1rem;
               width: 6rem;
               height: 6rem;
@@ -133,7 +133,6 @@ class home extends Component {
             }
             .pageContent {
               flex-direction: column;
-              background-color: #00000030;
               height: 100%;
             }
             .textBlock {

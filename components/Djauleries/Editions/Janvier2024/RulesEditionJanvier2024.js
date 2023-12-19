@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import styles from './styles.module.css'
+
 class RulesEditionJanvier2024 extends Component {
   render() {
     return (
@@ -149,7 +151,7 @@ class RulesEditionJanvier2024 extends Component {
           `}
         </style>
         <div className="subTitle">Règles : Janvier 2024</div>
-        <div className="textBlock">
+        <div className={styles.textBlock}>
           Bienvenue dans cette première
           <a
             href="https://forums.jeuxonline.info/sujet/1333946/djauleries-tournoi-mensuel"

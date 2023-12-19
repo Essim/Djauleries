@@ -9,7 +9,6 @@ class MyApp extends App {
         return (
             <Container>
                 <Head>
-                    <link href="/static/styles.css" rel="stylesheet" />
                 </Head>
                 <Component {...pageProps} />
             </Container>

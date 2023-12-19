@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import RulesEditionJanvier2024 from "./Editions/Janvier2024/RulesEditionJanvier2024";
 class home extends Component {
   constructor(props) {
     super(props);
@@ -11,7 +12,8 @@ class home extends Component {
 
   render() {
     let switchMenu = this.switchMenu;
-    const { currentPage } = this.state;
+    let switchEdition = this.switchEdition;
+    const { currentPage, currentEdition } = this.state;
 
     return (
       <div className="fullPageContent">
@@ -97,7 +99,7 @@ class home extends Component {
               border: solid 2px #000000a3;
               border-top: none;
               width: 100%;
-              background-color: #00000080;   
+              background-color: #00000080;
               box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 10px 5px;
             }
             .menuItem:hover {
@@ -105,6 +107,7 @@ class home extends Component {
               font-weight: 700;
               border: solid 2px #4c4d5780;
               background-color: #4c4d5750;
+              pointer: cursor;
               box-shadow: rgba(255, 255, 255, 0.8) 0px 0px 10px 5px;
             }
             .menuItem:selected {
@@ -170,10 +173,20 @@ class home extends Component {
           </div>
           <div className="editionsArea">
             <div className="secondaryTitle menuItem">
-              <div className="menuText">Janvier 2024</div>
+              <div
+                className="menuText"
+                onClick={() => switchEdition("Janvier2024")}
+              >
+                Janvier 2024
+              </div>
             </div>
             <div className="secondaryTitle menuItem">
-              <div className="menuText">Février 2024</div>
+              <div
+                className="menuText"
+                onClick={() => switchEdition("Fevrier2024")}
+              >
+                Février 2024
+              </div>
             </div>
           </div>
           <div className="subMenusArea">
@@ -197,9 +210,15 @@ class home extends Component {
             </div>
           </div>
         </div>
-        {currentPage == "rules" && (
+        {currentPage == "rules" && currentEdition == "Janvier24" && (
+          <RulesEditionJanvier2024
+            updateState={this.updateState}
+            state={this.state}
+          />
+        )}
+        {currentPage == "rules" && currentEdition == "Fevrier2024" && (
           <div className="pageContent">
-            <div className="subTitle">Règles</div>
+            <div className="subTitle">Règles : Février 2024</div>
             <div className="textBlock">
               Bienvenue dans cette première{" "}
               <a
@@ -308,6 +327,11 @@ class home extends Component {
   switchMenu = (menu) => {
     this.updateState({
       currentPage: menu,
+    });
+  };
+  switchEdition = (edition) => {
+    this.updateState({
+      currentEdition: edition,
     });
   };
 }

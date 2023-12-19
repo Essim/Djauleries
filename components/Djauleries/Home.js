@@ -120,7 +120,7 @@ class home extends Component {
               font-weight: 700;
               border: solid 2px #4c4d57a3;
               background-color: #4c4d5780;
-              box-shadow: rgba(255, 255, 255, 0.8) 0px 0px 10px 5px;
+              box-shadow: rgba(255, 255, 255, 0.7) 0px 0px 10px;
             }
             .menuText {
               margin-left: auto;
@@ -150,7 +150,7 @@ class home extends Component {
             <div
               className={
                 "secondaryTitle menuItem " +
-                (currentPage == "Janvier2024" ? "menuItemSelected" : "")
+                (currentEdition == "Janvier2024" ? "menuItemSelected" : "")
               }
               onClick={() => switchEdition("Janvier2024")}
             >
@@ -159,7 +159,7 @@ class home extends Component {
             <div
               className={
                 "secondaryTitle menuItem " +
-                (currentPage == "Fevrier2024" ? "menuItemSelected" : "")
+                (currentEdition == "Fevrier2024" ? "menuItemSelected" : "")
               }
               onClick={() => switchEdition("Fevrier2024")}
             >

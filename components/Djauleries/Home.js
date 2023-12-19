@@ -16,6 +16,11 @@ class home extends Component {
       <div className="pageBG">
         <style jsx>
           {`
+            div {
+              display: flex;
+              color: white;
+              margin: auto;
+            }
             .pageBG {
               background-color: #0e273d;
               position: absolute;
@@ -25,6 +30,7 @@ class home extends Component {
               left: 0;
               background-size: 40rem;
               font-family: fantasy;
+              flex-direction: column;
               background-image: url(https://imgur.com/hgc2ubE.png);
             }
             .logo {
@@ -36,9 +42,6 @@ class home extends Component {
               top: 1rem;
               background-size: cover;
               background-repeat: no-repeat;
-            }
-            div {
-              display: flex;
             }
             .titleArea {
               font-size: 3rem !important;

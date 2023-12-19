@@ -5,7 +5,7 @@ import InscriptionsEditionJanvier2024 from "./Editions/Janvier2024/InscriptionsE
 import InscriptionsEditionFevrier2024 from "./Editions/Fevrier2024/InscriptionsEditionFevrier2024";
 import MatchsEditionJanvier2024 from "./Editions/Janvier2024/MatchsEditionJanvier2024";
 import MatchsEditionFevrier2024 from "./Editions/Fevrier2024/MatchsEditionFevrier2024";
-import HomeDescription from "./Editions/Fevrier2024/HomeDescription";
+import HomeDescription from "./HomeDescription";
 
 class home extends Component {
   constructor(props) {

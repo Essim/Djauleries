@@ -3,6 +3,151 @@ class RulesEditionJanvier2024 extends Component {
   render() {
     return (
       <div className="pageContent">
+        <style jsx>
+          {`
+            body {
+              background-color: black;
+            }
+            a {
+              display: inline-block;
+              text-decoration: none;
+              font-family: monospace;
+              font-weight: bolder;
+              color: white;
+            }
+            div {
+              display: flex;
+              color: white;
+            }
+            .PageBGFilter {
+              background-color: #00000030;
+              position: fixed;
+              width: 100%;
+              height: 100%;
+              top: 0;
+              left: 0;
+              z-index: -1;
+            }
+            .pageBG {
+              position: fixed;
+              width: 100%;
+              height: 100%;
+              top: 0;
+              left: 0;
+              background-image: url(https://imgur.com/hgc2ubE.png);
+              z-index: -2;
+            }
+            .fullPageContent {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              top: 0;
+              left: 0;
+              background-size: 40rem;
+              font-family: fantasy;
+              flex-direction: column;
+            }
+            .logo {
+              background-image: url(https://imgur.com/lQpP8Ww.png);
+              position: fixed;
+              left: 1rem;
+              width: 6rem;
+              height: 6rem;
+              top: 1rem;
+              background-size: cover;
+              background-repeat: no-repeat;
+            }
+            .titleArea {
+              font-size: 3rem !important;
+            }
+            .mainTitle {
+              padding-top: 2rem;
+              padding-bottom: 3rem;
+              font-size: 3rem;
+              height: 2rem;
+              color: #d0d0d0;
+              font-weight: 600;
+              border: solid 2px #000000a3;
+              border-top: none;
+              width: 100%;
+              background-color: #00000080;
+            }
+            .titleText {
+              margin-left: auto;
+              margin-right: auto;
+            }
+            .menuItem {
+              padding: 1rem;
+              font-size: 2rem;
+              height: 2rem;
+              color: #d0d0d0;
+              font-weight: 600;
+              border: solid 2px #000000a3;
+              border-top: none;
+              width: 100%;
+              background-color: #00000080;
+              box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 10px 5px;
+            }
+            .menuItem:hover {
+              color: white;
+              font-weight: 700;
+              border: solid 2px #4c4d5780;
+              background-color: #4c4d5750;
+              pointer: cursor;
+              box-shadow: rgba(255, 255, 255, 0.8) 0px 0px 10px 5px;
+            }
+            .menuItem:selected {
+              color: white;
+              font-weight: 700;
+              border: solid 2px #4c4d57a3;
+              background-color: #4c4d5780;
+              box-shadow: rgba(255, 255, 255, 0.8) 0px 0px 10px 5px;
+            }
+            .menuText {
+              margin-left: auto;
+              margin-right: auto;
+            }
+            .menuArea {
+              flex-direction: column;
+              width: 100%;
+            }
+            .secondaryTitle {
+            }
+            .subMenusArea {
+              flex-direction: row;
+            }
+            .subTitle {
+              text-decoration: underline;
+              margin-left: auto;
+              margin-right: auto;
+              margin-top: 3rem;
+              font-size: 2rem;
+            }
+            .pageContent {
+              flex-direction: column;
+              height: 100%;
+            }
+            .textBlock {
+              margin-top: 1rem;
+              font-size: 1.1rem;
+              margin-left: 20%;
+              margin-right: 20%;
+              background-color: black;
+              display: inline-block;
+              box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 10px 10px;
+            }
+            .subTitleLine {
+              margin-left: 20%;
+              margin-right: 20%;
+              display: inline-block;
+              margin-top: 2rem;
+              font-size: 1.5rem;
+              font-weight: bolder;
+              background-color: black;
+              box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 10px 10px;
+            }
+          `}
+        </style>
         <div className="subTitle">Règles : Janvier 2024</div>
         <div className="textBlock">
           Bienvenue dans cette première

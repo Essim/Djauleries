@@ -16,6 +16,10 @@ class home extends Component {
       <div className="pageBG">
         <style jsx>
           {`
+            a {
+              display: inline-block;
+              text-decoration: none;
+            }
             div {
               display: flex;
               color: white;
@@ -98,13 +102,14 @@ class home extends Component {
               flex-direction: row;
             }
             .subTitle {
+              text-decoration: underline;
             }
             .rulesContent {
               margin-left: auto;
               margin-right: auto;
               margin-top: 3rem;
               font-size: 2rem;
-              text-decoration: underline;
+              flex-direction: column;
             }
             .textBlock {
               margin-top: 1rem;
@@ -153,7 +158,22 @@ class home extends Component {
         {currentPage == "rules" && (
           <div className="rulesContent">
             <div className="subTitle">Règles</div>
-            <div className="textBlock">Bienvenue dans cette première <a href="https://forums.jeuxonline.info/sujet/1333946/djauleries-tournoi-mensuel">{"(?)"}</a> édition des Djauleries ! Les Djauleries sont un tournoi mensuel se déroulant sur le tournoi, en association avec le <a href="https://ktarena.com/">KTA</a>. C'est l'occasion pour tout le monde de s'amuser et s'entraîner, avec des horaires flexibles et des règles originales.</div>
+            <div className="textBlock">
+              Bienvenue dans cette première{" "}
+              <a
+                href="https://forums.jeuxonline.info/sujet/1333946/djauleries-tournoi-mensuel"
+                target="_blank"
+              >
+                {"(?)"}
+              </a>{" "}
+              édition des Djauleries ! Les Djauleries sont un tournoi mensuel se
+              déroulant sur le tournoi, en association avec le{" "}
+              <a href="https://ktarena.com/" target="_blank">
+                KTA
+              </a>
+              . C'est l'occasion pour tout le monde de s'amuser et s'entraîner,
+              avec des horaires flexibles et des règles originales.
+            </div>
           </div>
         )}
         {currentPage == "subscription" && (

@@ -63,6 +63,10 @@ class MatchsEditionJanvier2024 extends Component {
         <div className="subTitle">Matchs : Janvier 2024</div>
         <div className="textBlock">
           Liste des matchs : NONE !
+          Screens = Lien externe, tuto Screen Ankama
+          Logo sur l'icone d'un match - Done, TODO
+          Rappel deadline pour all matchs
+          Indication d'accord de planification sur le match
         </div>
       </div>
     );

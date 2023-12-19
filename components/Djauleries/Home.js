@@ -5,19 +5,22 @@ import InscriptionsEditionJanvier2024 from "./Editions/Janvier2024/InscriptionsE
 import InscriptionsEditionFevrier2024 from "./Editions/Fevrier2024/InscriptionsEditionFevrier2024";
 import MatchsEditionJanvier2024 from "./Editions/Janvier2024/MatchsEditionJanvier2024";
 import MatchsEditionFevrier2024 from "./Editions/Fevrier2024/MatchsEditionFevrier2024";
+import HomeDescription from "./Editions/Fevrier2024/HomeDescription";
+
 class home extends Component {
   constructor(props) {
     super(props);
     this.state = {
       host: "https://djauleries.caprover-root.fol-stories.com",
-      currentPage: "rules",
-      currentEdition: "Janvier2024",
+      currentPage: "None",
+      currentEdition: "None",
     };
   }
 
   render() {
     let switchMenu = this.switchMenu;
     let switchEdition = this.switchEdition;
+    let backHome = this.backHome;
     const { currentPage, currentEdition } = this.state;
 
     return (
@@ -75,6 +78,7 @@ class home extends Component {
               top: 1.5vw;
               background-size: cover;
               background-repeat: no-repeat;
+              cursor: pointer;
             }
             .titleArea {
               font-size: 4.5vw !important;
@@ -94,6 +98,7 @@ class home extends Component {
             .titleText {
               margin-left: auto;
               margin-right: auto;
+              cursor: pointer;
             }
             .menuItem {
               padding: 1.5vw;
@@ -155,13 +160,13 @@ class home extends Component {
             }
           `}
         </style>
-        <div className="logo"></div>
+        <div className="logo" onClick={() => backHome()}></div>
         <div className="pageBG"></div>
         <div className="pageBGFilter"></div>
         <div className="menuArea">
           <div className="titleArea">
             <div className="mainTitle">
-              <div className="titleText">Djauleries</div>
+              <div className="titleText" onClick={() => backHome()}>Djauleries</div>
             </div>
           </div>
           <div className="editionsArea">
@@ -183,96 +188,6 @@ class home extends Component {
             >
               <div className="menuText">Février 2024</div>
             </div>
-            {/* <div
-              className={
-                "inactiveSecondaryTitle " +
-                (currentEdition == "Mars2024" ? "menuItemSelected" : "")
-              }
-             // onClick={() => switchEdition("Fevrier2024")}
-            >
-              <div className="menuText inactiveMenuText">Mars</div>
-            </div> */}
-            {/* <div
-              className={
-                "inactiveSecondaryTitle " +
-                (currentEdition == "Mars2024" ? "menuItemSelected" : "")
-              }
-             // onClick={() => switchEdition("Fevrier2024")}
-            >
-              <div className="menuText inactiveMenuText">Avril</div>
-            </div>
-            <div
-              className={
-                "inactiveSecondaryTitle " +
-                (currentEdition == "Mars2024" ? "menuItemSelected" : "")
-              }
-             // onClick={() => switchEdition("Fevrier2024")}
-            >
-              <div className="menuText inactiveMenuText">Mai</div>
-            </div>
-            <div
-              className={
-                "inactiveSecondaryTitle " +
-                (currentEdition == "Mars2024" ? "menuItemSelected" : "")
-              }
-             // onClick={() => switchEdition("Fevrier2024")}
-            >
-              <div className="menuText inactiveMenuText">Juin</div>
-            </div>
-            <div
-              className={
-                "inactiveSecondaryTitle " +
-                (currentEdition == "Mars2024" ? "menuItemSelected" : "")
-              }
-             // onClick={() => switchEdition("Fevrier2024")}
-            >
-              <div className="menuText inactiveMenuText">Juil</div>
-            </div>
-            <div
-              className={
-                "inactiveSecondaryTitle " +
-                (currentEdition == "Mars2024" ? "menuItemSelected" : "")
-              }
-             // onClick={() => switchEdition("Fevrier2024")}
-            >
-              <div className="menuText inactiveMenuText">Août</div>
-            </div>
-            <div
-              className={
-                "inactiveSecondaryTitle " +
-                (currentEdition == "Mars2024" ? "menuItemSelected" : "")
-              }
-             // onClick={() => switchEdition("Fevrier2024")}
-            >
-              <div className="menuText inactiveMenuText">Sept</div>
-            </div>
-            <div
-              className={
-                "inactiveSecondaryTitle " +
-                (currentEdition == "Mars2024" ? "menuItemSelected" : "")
-              }
-             // onClick={() => switchEdition("Fevrier2024")}
-            >
-              <div className="menuText inactiveMenuText">Oct</div>
-            </div>
-            <div
-              className={
-                "inactiveSecondaryTitle " +
-                (currentEdition == "Mars2024" ? "menuItemSelected" : "")
-              }
-             // onClick={() => switchEdition("Fevrier2024")}
-            >
-              <div className="menuText inactiveMenuText">Nov</div>
-            </div>
-            <div
-              className={
-                "inactiveSecondaryTitle " +
-                (currentEdition == "Mars2024" ? "menuItemSelected" : "")
-              }
-             // onClick={() => switchEdition("Fevrier2024")}
-            >
-              <div className="menuText inactiveMenuText">Dec</div>
-            </div> */}
           </div>
           <div className="subMenusArea">
             <div
@@ -339,6 +254,9 @@ class home extends Component {
             state={this.state}
           />
         )}
+        {currentPage == "None" && currentEdition == "None" && (
+          <HomeDescription updateState={this.updateState} state={this.state} />
+        )}
       </div>
     );
   }
@@ -346,6 +264,12 @@ class home extends Component {
     this.setState(newState);
   };
 
+  backHome = () => {
+    this.updateState({
+      currentPage: "None",
+      currentEdition: "None",
+    });
+  };
   switchMenu = (menu) => {
     this.updateState({
       currentPage: menu,

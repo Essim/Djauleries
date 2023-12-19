@@ -102,8 +102,15 @@ class home extends Component {
             .rulesContent {
               margin-left: auto;
               margin-right: auto;
+              margin-top: 3rem;
               font-size: 2rem;
               text-decoration: underline;
+            }
+            .textBlock {
+              margin-top: 1rem;
+              font-size: 1rem;
+              margin-left: 20%;
+              margin-right: 20%;
             }
           `}
         </style>
@@ -116,7 +123,10 @@ class home extends Component {
           </div>
           <div className="editionsArea">
             <div className="secondaryTitle menuItem">
-              <div className="menuText">Edition 2024</div>
+              <div className="menuText">Janvier 2024</div>
+            </div>
+            <div className="secondaryTitle menuItem">
+              <div className="menuText">Février 2024</div>
             </div>
           </div>
           <div className="subMenusArea">
@@ -143,6 +153,7 @@ class home extends Component {
         {currentPage == "rules" && (
           <div className="rulesContent">
             <div className="subTitle">Règles</div>
+            <div className="textBlock">Bienvenue dans cette première <a href="https://forums.jeuxonline.info/sujet/1333946/djauleries-tournoi-mensuel">{"(?)"}</a> édition des Djauleries ! Les Djauleries sont un tournoi mensuel se déroulant sur le tournoi, en association avec le <a href="https://ktarena.com/">KTA</a>. C'est l'occasion pour tout le monde de s'amuser et s'entraîner, avec des horaires flexibles et des règles originales.</div>
           </div>
         )}
         {currentPage == "subscription" && (

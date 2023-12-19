@@ -22,9 +22,12 @@ class home extends Component {
             .logo {
               background-image: url(https://imgur.com/lQpP8Ww.png);
               position: absolute;
-              left: 0;
-              width: 2rem;
-              height: 2rem;
+              left: 1rem;
+              width: 6rem;
+              height: 6rem;
+              top: 1rem;
+              background-size: cover;
+              background-repeat: no-repeat;
             }
             div {
               display: flex;

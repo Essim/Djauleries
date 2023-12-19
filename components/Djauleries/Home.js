@@ -19,7 +19,6 @@ class home extends Component {
             div {
               display: flex;
               color: white;
-              margin: auto;
             }
             .pageBG {
               background-color: #0e273d;
@@ -98,9 +97,13 @@ class home extends Component {
             .subMenusArea {
               flex-direction: row;
             }
-            .tertiaryTitle {
+            .subTitle {
             }
             .rulesContent {
+              margin-left: auto;
+              margin-right: auto;
+              font-size: 2rem;
+              text-decoration: underline;
             }
           `}
         </style>
@@ -117,12 +120,12 @@ class home extends Component {
             </div>
           </div>
           <div className="subMenusArea">
-            <div className="tertiaryTitle menuItem">
+            <div className="menuItem">
               <div className="menuText" onClick={() => switchMenu("rules")}>
                 Règles
               </div>
             </div>
-            <div className="tertiaryTitle menuItem">
+            <div className="menuItem">
               <div
                 className="menuText"
                 onClick={() => switchMenu("subscription")}
@@ -130,22 +133,28 @@ class home extends Component {
                 Inscriptions
               </div>
             </div>
-            <div className="tertiaryTitle menuItem">
+            <div className="menuItem">
               <div className="menuText" onClick={() => switchMenu("matchs")}>
                 Matchs
               </div>
             </div>
           </div>
         </div>
-        {currentPage == "rules" && <div className="rulesContent">
-          rules</div>}
-        {currentPage == "subscription" && (
-          <div className="subscriptionContent">
-            subscription
+        {currentPage == "rules" && (
+          <div className="rulesContent">
+            <div className="subTitle">Règles</div>
           </div>
         )}
-        {currentPage == "matchs" && <div className="matchsContent">
-          matchs</div>}
+        {currentPage == "subscription" && (
+          <div className="subscriptionContent">
+            <div className="subTitle">Inscriptions</div>
+          </div>
+        )}
+        {currentPage == "matchs" && (
+          <div className="matchsContent">
+            <div className="subTitle">Matchs</div>
+          </div>
+        )}
       </div>
     );
   }

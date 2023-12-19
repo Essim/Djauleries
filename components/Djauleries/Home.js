@@ -128,16 +128,26 @@ class home extends Component {
               margin-left: auto;
               margin-right: auto;
             }
+            .inactiveMenuText {
+              color: #808080;
+            }
             .menuArea {
               flex-direction: column;
               width: 100%;
             }
             .secondaryTitle {
             }
-            .inactiveSecondaryTitle {
+            .inactiveSecondaryTitle {   
+              padding: 1rem;
+              height: 2rem;
+              color: #d0d0d0;
+              font-weight: 600;
+              border: solid 2px #000000a3;
+              border-top: none;
+              box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 10px 5px;
               width: 5rem;
-              background-color: #7c7d7750;
-              cursor: default;
+              background-color: #303030a0;
+              font-size: 1.5rem;
             }
             .subMenusArea {
               flex-direction: row;
@@ -174,93 +184,93 @@ class home extends Component {
             </div>
             <div
               className={
-                "menuItem inactiveSecondaryTitle " +
+                "inactiveSecondaryTitle " +
                 (currentEdition == "Mars2024" ? "menuItemSelected" : "")
               }
              // onClick={() => switchEdition("Fevrier2024")}
             >
-              <div className="menuText">Mars</div>
+              <div className="menuText inactiveMenuText">Mars</div>
             </div>
             <div
               className={
-                "menuItem inactiveSecondaryTitle " +
+                "inactiveSecondaryTitle " +
                 (currentEdition == "Mars2024" ? "menuItemSelected" : "")
               }
              // onClick={() => switchEdition("Fevrier2024")}
             >
-              <div className="menuText">Avril</div>
+              <div className="menuText inactiveMenuText">Avril</div>
             </div>
             <div
               className={
-                "menuItem inactiveSecondaryTitle " +
+                "inactiveSecondaryTitle " +
                 (currentEdition == "Mars2024" ? "menuItemSelected" : "")
               }
              // onClick={() => switchEdition("Fevrier2024")}
             >
-              <div className="menuText">Mai</div>
+              <div className="menuText inactiveMenuText">Mai</div>
             </div>
             <div
               className={
-                "menuItem inactiveSecondaryTitle " +
+                "inactiveSecondaryTitle " +
                 (currentEdition == "Mars2024" ? "menuItemSelected" : "")
               }
              // onClick={() => switchEdition("Fevrier2024")}
             >
-              <div className="menuText">Juin</div>
+              <div className="menuText inactiveMenuText">Juin</div>
             </div>
             <div
               className={
-                "menuItem inactiveSecondaryTitle " +
+                "inactiveSecondaryTitle " +
                 (currentEdition == "Mars2024" ? "menuItemSelected" : "")
               }
              // onClick={() => switchEdition("Fevrier2024")}
             >
-              <div className="menuText">Juil</div>
+              <div className="menuText inactiveMenuText">Juil</div>
             </div>
             <div
               className={
-                "menuItem inactiveSecondaryTitle " +
+                "inactiveSecondaryTitle " +
                 (currentEdition == "Mars2024" ? "menuItemSelected" : "")
               }
              // onClick={() => switchEdition("Fevrier2024")}
             >
-              <div className="menuText">Août</div>
+              <div className="menuText inactiveMenuText">Août</div>
             </div>
             <div
               className={
-                "menuItem inactiveSecondaryTitle " +
+                "inactiveSecondaryTitle " +
                 (currentEdition == "Mars2024" ? "menuItemSelected" : "")
               }
              // onClick={() => switchEdition("Fevrier2024")}
             >
-              <div className="menuText">Sept</div>
+              <div className="menuText inactiveMenuText">Sept</div>
             </div>
             <div
               className={
-                "menuItem inactiveSecondaryTitle " +
+                "inactiveSecondaryTitle " +
                 (currentEdition == "Mars2024" ? "menuItemSelected" : "")
               }
              // onClick={() => switchEdition("Fevrier2024")}
             >
-              <div className="menuText">Oct</div>
+              <div className="menuText inactiveMenuText">Oct</div>
             </div>
             <div
               className={
-                "menuItem inactiveSecondaryTitle " +
+                "inactiveSecondaryTitle " +
                 (currentEdition == "Mars2024" ? "menuItemSelected" : "")
               }
              // onClick={() => switchEdition("Fevrier2024")}
             >
-              <div className="menuText">Nov</div>
+              <div className="menuText inactiveMenuText">Nov</div>
             </div>
             <div
               className={
-                "menuItem inactiveSecondaryTitle " +
+                "inactiveSecondaryTitle " +
                 (currentEdition == "Mars2024" ? "menuItemSelected" : "")
               }
              // onClick={() => switchEdition("Fevrier2024")}
             >
-              <div className="menuText">Dev</div>
+              <div className="menuText inactiveMenuText">Dec</div>
             </div>
           </div>
           <div className="subMenusArea">

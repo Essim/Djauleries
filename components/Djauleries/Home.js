@@ -273,6 +273,7 @@ class home extends Component {
   switchMenu = (menu) => {
     this.updateState({
       currentPage: menu,
+      currentEdition: "rules",
     });
   };
   switchEdition = (edition) => {
